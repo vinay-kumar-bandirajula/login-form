@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+}
+
+.form-content{
+    display: flex;
+    height: 100vh;
+}
+
+
+.form-section{
+    display: flex;
+    height: 100vh;
+
+}
+.left-sidebar{
+    background-image: url("left-side.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 620px;
+}
+.text-image p{
+    color: white;
+    font-size: 50px;
+    width: 620px;
+    height: 70px;
+    position: absolute;
+    top: 180px;
+    align-content: center;
+    text-align: center;
+    background-color: rgb(83, 78, 78);
+    opacity: 0.3;
+}
+
+.right-content{
+    flex: 1;
+    padding: 60px 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;   /* ← KEY FIX */
+    background: #fff;
+}
+
+.right-content p{
+    font-size: 20px;
+    max-width: 750px;   /* not fixed width */
+    line-height: 1.6;
+}
+.you-know{
+    margin-top: 40px;
+}
+
+.form-card{
+    margin-top: 40px;
+    width: 100%;
+    max-width: 760px;
+    padding: 32px 40px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 
+        0 10px 25px rgba(0,0,0,0.08),
+        0 4px 10px rgba(0,0,0,0.04);
+}
+
+
+.form-card h4{
+    margin-bottom: 20px;
+    /* margin-left: 20px; */
+    font-size: 24px;
+    color: gray;
+}
+
+.form-card input:focus{
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59,130,246,.2);
+    outline: none;
+}
+
+.form-card label{
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+    color: #6b7280;
+}
+
+
+.form-card .field-1,
+.form-card .field-2,
+.form-card .field-3{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    margin-bottom: 25px;
+}
+
+.form-card input{
+    width: 100%;
+    height: 36px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    padding: 6px 10px;
+    transition: 0.25s ease;
+}
+
+
+.form-card input:focus{
+    border: 2px solid #3b82f6; ;
+    outline: none; 
+}
+
+.form-card .field-1 .firstname,
+.form-card .field-1 .lastname,
+.form-card .field-2 .email,
+.form-card .field-2 .phonenumber,
+.form-card .field-3 .password,
+.form-card .field-3 .c-pass{
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.create-button{
+    margin-top: 25px;
+}
+
+.create-button button{
+    background: #596D48;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 12px 40px;
+    font-weight: 600;
+    border: none;
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    margin-bottom: 20px;
+}
+
+
+.right-content p span{
+    color: #596D48;
+    font-weight: bold;
+}
